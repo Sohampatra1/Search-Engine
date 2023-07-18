@@ -1,81 +1,54 @@
 
 ```markdown
-# Build My Own Search Engine using searXNG, Docker, Linode
+## Setup
 
-This project aims to build a custom search engine using searXNG, Docker, and Linode. By leveraging these technologies, you can create your own private search engine with enhanced privacy and control.
+To set up the search engine, follow these steps:
 
-## Setup Guide
-
-To get started, follow these steps:
-
-1. Install Docker on your local machine.
-2. Clone the searXNG repository:
-
+1. Install Docker on your machine:
    ```bash
-   git clone https://github.com/searxng/searxng.git
+   sudo apt install docker.io -y
+   sudo apt install docker-compose -y
    ```
 
-3. Navigate to the cloned directory:
-
+2. Clone the searXNG Docker repository:
    ```bash
-   cd searxng
+   git clone https://github.com/searxng/searxng-docker.git
    ```
 
-4. Build the Docker image:
-
+3. Start the searXNG Docker container:
    ```bash
-   docker build -t searxng .
+   cd searxng-docker
+   sudo docker-compose up -d
    ```
 
-5. Run the Docker container:
+By following these steps, you will have set up the searXNG search engine using Docker.
 
-   ```bash
-   docker run -d -p 8888:8888 searxng
-   ```
-
-6. Access the search engine by opening your browser and visiting `http://localhost:8888`.
+For more detailed instructions and configuration options, please refer to the [searXNG Docker repository](https://github.com/searxng/searxng-docker).
 
 ## Deployment on Linode
 
-To deploy your search engine on Linode, follow these steps:
+To deploy the search engine on a Linode server, follow these additional steps:
 
-1. Create a Linode account and set up a new Linode instance.
-2. SSH into your Linode instance.
-3. Install Docker on your Linode instance.
-4. Clone the searXNG repository:
-
+1. Set up a Linode server and install Docker and Docker Compose.
+2. SSH into your Linode server.
+3. Clone the searXNG Docker repository:
    ```bash
-   git clone https://github.com/searxng/searxng.git
+   git clone https://github.com/searxng/searxng-docker.git
    ```
 
-5. Navigate to the cloned directory:
-
+4. Start the searXNG Docker container:
    ```bash
-   cd searxng
+   cd searxng-docker
+   sudo docker-compose up -d
    ```
 
-6. Build the Docker image:
+By following these steps, you will have deployed the searXNG search engine on your Linode server using Docker.
 
-   ```bash
-   docker build -t searxng .
-   ```
-
-7. Run the Docker container:
-
-   ```bash
-   docker run -d -p 8888:8888 searxng
-   ```
-
-8. Access your search engine by opening your browser and visiting `http://<your-linode-ip>:8888`.
-
-Feel free to customize and enhance your search engine according to your requirements.
-
-## Contributing
-
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+For more information on deploying applications on Linode, refer to the [Linode documentation](https://www.linode.com/docs/).
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
 ```
 
+Feel free to customize the content as needed.
