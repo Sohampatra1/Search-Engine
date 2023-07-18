@@ -1,4 +1,3 @@
-Certainly! Here's an updated version of the GitHub README in Markdown format, including a code example section:
 
 ```markdown
 # Build My Own Search Engine using searXNG, Docker, Linode
@@ -80,4 +79,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Feel free to use this Markdown code for your GitHub README.
